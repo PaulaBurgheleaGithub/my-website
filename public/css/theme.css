@@ -1,0 +1,278 @@
+:root {
+	--bg-color:#e1e1e1;
+	--header-bg-color:#aaa;
+	--text-color:#F9EBD7;
+	--heading-color:#222;
+	--right-section:#C7A267;
+	--orange:#F3B945;
+	--active-orange:#eda619;
+	--col-bg-color: #69A5A1;
+	--dark-green: #194542;
+	--light-green:#cae8cb;
+	--cv-bg-light:#cae8cb;
+	--bg-profile:#D5BA7F;
+
+	--initial: -250px;
+	--final: -50px;
+
+/* Option 2 colors from https://seasons-and-salt.com/  */
+	--main-bg-brown: #90482F;
+	--main-light01: #C7A267;
+	--main-light02:#FDFEF6;
+	--main-bg-red:#B43C20;
+
+	--neutral-navy:#153458;
+	--neutral-grey:#303436;
+	--neutral-blue:#9FCEFF;
+	--neurtal-cream:#9B8F83;
+
+	--accent-pink:#E4957D;
+	--accent-green:#64613E;
+	
+
+	--heading-text:"Yusei Magic", sans-serif;
+	--body-text:"Inter", sans-serif;
+}
+
+body {
+	font-family: var(--body-text);
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+body > header {
+	background-color: var(--light-green);
+	color: var(--active-orange);
+}
+
+body > nav {
+	background-color: var(--orange);
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(100vh);
+	transition: 
+		opacity 1s,
+		visibility 0s linear 1s,
+		transform 1s;
+}
+
+svg {
+	background-color: #f9ebd7;
+}
+.wheels {
+	fill: #faebd7;
+	stroke: #000;
+	stroke-width: 9px;
+}
+.structure {
+	stroke-width: 11px;
+}
+.main-circle {
+	fill: url(#gradient);
+}
+.light {
+	stop-color: #cae8cb;
+}
+.dark {
+	stop-color: #1c501d;
+}
+
+.menu-toggle:checked + nav {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+	transition: 
+		opacity 1s,
+		transform 1s;
+}
+
+nav .heading { 
+	opacity: 0;
+	transition: 
+		opacity 1s ease 0s;
+}
+
+.menu-toggle:checked + nav .heading {
+	opacity: 1;
+	transition: 
+		opacity 1s ease 1s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--heading-text);
+	color: var(--dark-green);
+}
+
+.name hgroup h1 {
+	/* font-size: 5rem; */
+	color: var(--dark-green);
+}
+
+.intro h2 {
+	/* font-size: 4rem; */
+}
+
+.menu {
+	background-color: var(--orange);
+	transition:
+		background-color 0.7s;
+}
+
+.menu:hover {
+	background-color:var(--active-orange);
+}
+
+.menu.active {
+	background-color: var(--dark-green);
+}
+
+.menu.active:hover {
+	background-color: #69A5A1;
+}
+
+.menu-text {
+	display: inline-block;
+	z-index: 50;
+	visibility: visible;
+}
+
+.nav-main {
+	font-family: var(--heading-text);
+	/* font-size: 4rem; */
+	color: var(--cv-bg-color);
+}
+
+.menu:hover::before {
+	color: var(--active-orange);
+}
+
+.menu-list {
+	text-transform: uppercase;
+	line-height: 1.1;
+	
+}
+
+.menu-list li {
+	overflow: hidden;
+}
+
+.menu-list li a {
+	--delay: 0s;
+	--duration: 750ms;
+	--timing: cubic-bezier(0.475, 0.140, 0.660, 1.430);
+	color:var(--dark-green);
+	display: block;
+	opacity: 0;
+	transition: 
+		opacity var(--duration) ease calc(var(--delay) + 0.35s),
+		transform var(--duration) var(--timing) var(--delay);
+	transform: translateY(100%) rotate(7deg);
+}
+
+.menu-list li:nth-child(2) a {
+	--delay: 0.25s;
+}
+
+.menu-list li:nth-child(3) a {
+	--delay: 0.5s;
+}
+
+.openMenu li a {
+	opacity: 1;
+	transform: translateY(0) rotate(0);
+}
+
+.menu-list:hover li a {
+	opacity: 0.5;
+}
+
+.menu-list li a:hover {
+	opacity: 1;
+	
+}
+
+.menu-list li figure {
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.menu-list li:hover figure {
+	opacity: 1;	
+}
+
+#cvButton {
+	font-family: var(--body-text);
+	/* font-size: 1.5rem; */
+	background-color: var(--orange);
+	color: var(--dark-green);
+	border: none;
+	transition: 0.5s;
+}
+
+#cvButton:hover {
+	background-color: var(--active-orange);
+}
+
+
+article > header {
+	background-color: var(--bg-color);
+}
+
+.profile {
+	background-color: var(--cv-bg-light);
+}
+
+.profile,
+.profile h3 {
+	color: var(--dark-green);
+}
+
+
+.right :is(.skills, .languages) {
+	color: var(--bg-color);
+}
+
+.skills h3,
+.languages h3 {
+	color: var(--active-orange);;
+}
+
+.education :is(h3, h4, h5, h6),
+.menu.active:hover::before {
+	color: var(--dark-green);
+}
+
+.languages,
+.skills {
+	background-color: var(--dark-green);
+	color: var(--bg-color);
+}
+
+.education {
+	background-color: var(--active-orange);;
+}
+
+.roles {
+	color: var(--dark-green);
+}
+
+section h3::after {
+	content: "";
+	display: block;
+	width: 25px;
+	border-bottom: 2px solid;
+}
+
+footer {
+	background-color: var(--light-green);
+}
+footer a {
+	text-decoration: none;
+	font-style: inherit;
+	color: var(--dark-green);
+}

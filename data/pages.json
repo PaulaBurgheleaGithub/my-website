@@ -1,0 +1,28 @@
+[
+	{
+		"title":"Home",
+		"path":"/",
+		"controller": "index"
+	},
+	{
+		"title":"Projects",
+		"path":"/projects",
+		"controller": "projects",
+		"img_src": "/assets/img/london.jpeg",
+		"img_alt": "London"
+	},
+	{
+		"title":"About",
+		"path":"/about",
+		"controller": "about",
+		"img_src": "/assets/img/surf01.jpg",
+		"img_alt": "surf portugal"
+	},
+	{
+		"title":"Contact",
+		"path":"/contact",
+		"controller": "contact",
+		"img_src": "/assets/img/working.jpeg",
+		"img_alt": "working"
+	}
+]

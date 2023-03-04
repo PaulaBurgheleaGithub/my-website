@@ -1,0 +1,504 @@
+:root {
+	--padding:30px; /* clamp? */
+
+	--margin:calc(1.5 * var(--padding));
+	--section-margin:calc(2 * var(--margin));
+
+	--col-offset: calc(5vw + var(--padding) + var(--menu-size) + 10px);
+
+	--diameter: clamp(230px, 40vw, 450px);
+	--logo-size: 40px;
+	--menu-size: 30px;
+
+	--gap: var(--padding);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin:0;
+	padding:0;
+}
+
+img {
+	width:100%;
+}
+
+p, ul, ol, blockquote {
+	line-height:1.75;
+	margin:var(--margin) 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin:0 0 var(--margin);
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+h5,
+h6 {
+	font-size: 14px;
+}
+
+/* section {
+	margin:var(--section-margin) 0;
+} */
+
+.wrapper,
+article section,
+article > header {
+	padding:
+		var(--padding)
+		var(--col-offset) /* <-- 5vw was added -- but why? */
+		var(--padding)
+		calc(5vw + var(--padding));
+}
+
+body > header {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+body > nav {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.noscroll {
+	height: 100vh;
+	overflow: hidden;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+.nav-main {
+	font-size : 4rem;
+
+	position: relative;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+
+.nav-main figure {
+	position: absolute;
+	display: none;
+	bottom: 0;
+	left: var(--padding);
+}
+
+.menu-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0;
+	padding-left: var(--padding);
+}
+
+.menu-list a {
+	text-decoration: none;
+}
+
+.heading {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	/* justify-content: space-between; */
+	z-index: 2;
+}
+
+.heading > div {
+	display: flex;
+	gap: 7px;
+}
+
+.heading h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.logo svg {
+	width: var(--logo-size);
+	aspect-ratio: 1;
+	border-radius: 50%;
+}
+
+.menu {
+	/* Universal */
+	display: flex;
+	align-items: center;
+	margin: 0;
+	width: var(--menu-size);
+	aspect-ratio: 1;
+	border-radius: 50%;
+	z-index: 150;
+
+	/* solution 1  - ***position fixed*** */
+	position: fixed;
+	top: calc(var(--padding) + (var(--logo-size) - var(--menu-size)) / 2);
+	right: calc(var(--padding) + 5%);
+	/*
+		the heading container takes the height of the logo and
+		therefore if we want to know the extact midle we have to find
+		how much is 1/2 of the diference between the logo and the menu
+	*/
+	
+	/* solution 2 - bringhing the menu back into the dom flow */
+	/* position: sticky;
+	top: calc(-1 * var(--menu-size));
+	left: calc(100% - 5% - var(--padding)); */
+	
+}
+
+.menu:hover::before {
+	content: "menu";
+}
+
+.menu.active:hover::before {
+	content: "close";
+}
+
+.menu:hover::before,
+.menu.active:hover::before {
+	display: block;
+	position: relative;
+	right: calc(var(--margin) + 5px);
+	top: 0;
+}
+
+header > section {
+	/* display: flex;
+
+	justify-content: space-between;
+	align-items: center; */
+	/* position: relative; */
+	flex-grow: 1;
+}
+
+.intro {
+	position: relative;
+	max-width: 690px;
+	/* width: clamp(380px, 40%, 500px); */
+	z-index: 1;
+}
+
+.intro h2 {
+	font-size: clamp(2rem, 7vw, 5rem);
+}
+
+.header-img {
+	position: relative;
+
+	max-width: 450px;
+
+	margin: var(--padding) auto 0;
+
+	/* flex-grow: 1; */
+	z-index: 2;
+	aspect-ratio: 1;
+}
+
+.header-img > img {
+	width: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.header-img img.person {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+
+	position: relative;
+	top: 0;
+	left: 0;	
+	z-index: 10;
+}
+
+.header-img .surf-board {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+
+	top: -4%;
+	left: 34%;
+	z-index: 9;
+}
+
+.header-img .romania {
+	width: 35%;
+
+	top: 25%;
+	left: 6%;
+	z-index: 9;
+}
+
+.header-img .italy {
+	width: 50%;
+
+	top: 56%;
+	left: -5%;
+	z-index: 9
+}
+
+.header-img .shoes {
+	width: 40%;
+
+	top: 50%;
+	left: 76%;
+	transform: rotate(38deg);
+
+	z-index: 8;
+}
+
+.header-img .plane {
+	width: 15%;
+
+	top: -40%;
+	left: 80%;
+	z-index: 8;
+}
+
+.header-img .leaf-01,
+.header-img .leaf-02,
+.header-img .leaf-03,
+.header-img .leaf-04,
+.header-img .leaf-05,
+.header-img .leaf-06,
+.header-img .leaf-07,
+.header-img .leaf-08 {
+	width: 8%;
+	opacity: 1;
+}
+
+.header-img .leaf-01 {
+	top: 10%;
+	left: 15%;
+	z-index: 8;
+}
+
+.header-img .leaf-02 {
+	top: 77%;
+	left: 103%;
+	z-index: 7;
+}
+
+.header-img .leaf-03 {
+	top: 80%;
+	left: 10%;
+	z-index: 8;
+}
+
+.header-img .leaf-04 {
+	top: 89%;
+	left: -12%;
+	z-index: 8;
+}
+
+.header-img .leaf-05 {
+	top: 48%;
+	left: 12%;
+	z-index: 9;
+}
+
+.header-img .leaf-06 {
+	top: 92%;
+	left: 0%;
+	z-index: 7;
+}
+
+.header-img .leaf-07 {
+	top: 94%;
+	left: 10%;
+	z-index: 8;
+}
+
+.header-img .leaf-08 {
+	top: 96%;
+	left: 89%;
+	transform: rotate(178deg);
+	z-index: 8;
+}
+
+#cvButton {
+	font-size: 1.5rem;
+
+	margin: var(--margin);
+	width: 250px;
+	height: 85px;
+	border-radius: 45px;
+}
+
+main article {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+article .name {
+	width: 100%;
+	order:1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	 
+}
+
+article .profile {
+	width: 100%;
+	order: 2;
+}
+
+article .skills {
+	width: 100%;
+	order: 3;
+}
+
+article .languages {
+	width: 100%;
+	order: 4;
+}
+
+article .work-experience {
+	width: 100%;
+	order: 5;
+}
+
+article .education {
+	width: 100%;
+	order: 6;
+}
+
+main article.wrapper{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.name hgroup h1 {
+	font-size: 5rem;
+}
+
+.name hgroup h2 {
+	display: none;
+}
+
+article > header h1,
+article > header h2 {
+	margin: 0 0 var(--padding) 0;
+}
+
+.photo figure {
+	width: 400px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: var(--margin) auto var(--section-margin);
+}
+
+.photo figure img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover
+}
+
+.photo figure img:hover {
+	transform: scaleX(-1);
+ }
+
+.work-experience h4,
+.work-experience h5,
+.work-experience h6,
+.education h4,
+.education h5,
+.education h6 {
+	margin:0;
+}
+
+.work-experience > ol,
+.education > ol,
+.menu-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.work-experience .jobs hgroup {
+	display: flex;
+	justify-content: space-between; 
+	align-items: center;
+	gap: var(--padding);
+}
+
+.education .schools hgroup {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0 var(--padding);
+}
+
+.schools li {
+	margin: var(--margin) 0;
+}
+
+.education .schools hgroup h4 {
+	order:1;
+	min-width: 290px;
+}
+
+.education .schools hgroup h6 {
+	order:2;
+}
+
+.education .schools hgroup h5 {
+	order:3;
+	width: 100%;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 20px;
+}

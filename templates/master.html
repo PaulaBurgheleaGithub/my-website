@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- The Basics -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0">
+
+	<title>{{ title }}</title>
+
+	<!-- Primary Meta Tags -->
+	<meta name="title" content="{{ title }}">
+	<meta name="description" content="{{ description }}">
+	<meta name="application-name" content="{{ author }}"/>
+
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{{ url }}">
+	<meta property="og:title" content="{{ title }}">
+	<meta property="og:description" content="{{ description }}">
+	<!-- <meta property="og:image" content=""> -->
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="{{ url }}">
+	<meta property="twitter:title" content="{{ title }}">
+	<meta property="twitter:description" content="{{ description }}">
+	<!-- <meta property="twitter:image" content=""> -->
+
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/x-icon" href="/assets/favicomatic/favicon.ico" />
+
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicomatic/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicomatic/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicomatic/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicomatic/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicomatic/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicomatic/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicomatic/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/favicomatic/apple-touch-icon-152x152.png" />
+
+	<link rel="icon" type="image/png" href="/assets/favicomatic/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="/assets/favicomatic/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="/assets/favicomatic/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/assets/favicomatic/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="/assets/favicomatic/favicon-128.png" sizes="128x128" />
+
+
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	
+	<meta name="msapplication-TileImage" content="/assets/favicomatic/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="/assets/favicomatic/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="/assets/favicomatic/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="/assets/favicomatic/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="/assets/favicomatic/mstile-310x310.png" />
+
+
+	<!-- STYLESHEETS -->
+	{{{ styles }}}
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="/css/layout.css" />
+		
+	<link
+		rel="stylesheet"
+		type="text/css"
+		media="(min-width: 960px)"
+		href="/css/wide.css" />
+
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="/css/theme.css" />
+
+	<!-- TODO: maybe move this to the index template -->
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="/css/animation.css" />
+	<!---->
+	
+	<!-- FONTS -->
+	<!-- TODO migrate the fonts to the same computer as the webiste (hint: @font-face {} )-->
+	<link
+		rel="preconnect"
+		href="https://fonts.googleapis.com" />
+	<link
+		rel="preconnect"
+		href="https://fonts.gstatic.com"
+		crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Imprima&family=Inter:wght@200;400;700&display=swap"
+		rel="stylesheet" />
+	<link 
+		rel="preconnect" 
+		href="https://fonts.googleapis.com">
+	<link 
+		rel="preconnect" 
+		href="https://fonts.gstatic.com" 
+		crossorigin />
+	<link 
+		href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" 
+		rel="stylesheet" />
+	<!---->
+
+	<!-- SCRIPTS -->
+	{{{ scripts }}}
+	<script src="/js/menu.js" type="module"></script>
+	
+	<!---->
+</head>
+
+<body>
+	<header>
+		<div class="heading wrapper">
+			<div class="logo">
+					<svg viewBox="0 0 400 400">
+						<circle class="main-circle" cx="200" cy="200" r="200" />
+						<g class="wheels">
+							<!-- back wheel -->
+							<circle cx="110" cy="280" r="50" />
+							<!-- horisontal line -->
+							<line x1="60" y1="280" x2="160" y2="280" />
+							<!-- 45 angle line -->
+							<line x1="75" y1="245" x2="145" y2="315" />
+							<!-- vertical line -->
+							<line x1="110" y1="230" x2="110" y2="330" />
+							<!-- 135 angle line -->
+							<line x1="145" y1="245" x2="75" y2="315" />
+							<!-- midle circle -->
+							<circle cx="110" cy="280" r="7" />
+							<!-- front wheel -->
+							<circle cx="280" cy="230" r="100" />
+							<line x1="280" y1="330" x2="280" y2="130" />
+							<rect x1="280" y1="330" x2="280" y2="130" ></rect>
+							<line x1="180" y1="230" x2="380" y2="230" />
+							<line x1="350" y1="160" x2="210" y2="300" />
+							<line x1="210" y1="160" x2="350" y2="300" />
+							<!-- midle circle /butucul -->
+							<circle cx="280" cy="230" r="13" />
+							<!-- bike body /structure -->
+							<line class="structure" x1="280" y1="220" x2="280" y2="100" />
+							<!-- curved lines - https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths 
+							d="M x y Q x1 y1, x y-->
+							<path class="structure" d="M 110 230 Q 140 110 280 110" stroke="black" fill="transparent" />
+							<path class="structure" d="M 280 100 Q 280 80 255 85" stroke="black" fill="transparent" />
+							<path class="structure" d="M 176 135 Q 140 140 130 120" stroke="black" fill="transparent" />
+						</g>
+						<defs>
+							<!-- gradient -->
+							<linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+								<stop class="light" offset="0%" />
+								<stop class="dark" offset="100%" />
+							</linearGradient>
+						</defs>
+					</svg>
+			</div>
+			<h1>{{ site_title }}</h1>
+		</div>
+		<label class="menu" for="menu-toggle"></label>
+
+		<!-- USE A MUSTACHE CONDITION: -->
+		<section class="wrapper">
+			<div class="intro">
+				<h2>Hi! I am a Junior Web-Developer</h2>
+				<p>I have lived and worked in Romania, Italy, Portugal and currently in the United Kingdom. I was raised to strive for perfection and look for ways I can improve my life, my work and the relationship 
+				I have with people arround me.
+				</p>
+				<button id="cvButton">View CV</button>
+			</div>
+			<div class="header-img">
+				<img class="person" src="./assets/header/person.png" />
+				<img class="surf-board" src="./assets/header/board.png" />
+				<img class="romania" src="./assets/header/romania.png" />
+				<img class="italy" src="./assets/header/italy.png" />
+				<img class="shoes" src="./assets/header/shoes.png" />
+				<img class="plane" src="./assets/header/plane.png" />
+				<img class="leaf leaf-08"src="./assets/header/leaf07.png"/>
+				<img class="leaf leaf-07"src="./assets/header/leaf07.png"/>
+				<img class="leaf leaf-06"src="./assets/header/leaf06.png"/>
+				<img class="leaf leaf-05"src="./assets/header/leaf05.png"/>
+				<img class="leaf leaf-04"src="./assets/header/leaf04.png"/>
+				<img class="leaf leaf-03"src="./assets/header/leaf03.png"/>
+				<img class="leaf leaf-02"src="./assets/header/leaf02.png"/>
+				<img class="leaf leaf-01"src="./assets/header/leaf01.png"/>
+			</div>
+		</section>
+		<!-- END OF MUStACEH CONDITION -->
+
+	</header>
+	<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+	<nav>
+		<div class="heading wrapper">
+			<div class="logo">
+				<svg viewBox="0 0 400 400">
+					<circle class="main-circle" cx="200" cy="200" r="200" />
+					<g class="wheels">
+					<!-- back wheel -->
+					<circle cx="110" cy="280" r="50" />
+					<!-- horisontal line -->
+					<line x1="60" y1="280" x2="160" y2="280" />
+					<!-- 45 angle line -->
+					<line x1="75" y1="245" x2="145" y2="315" />
+					<!-- vertical line -->
+					<line x1="110" y1="230" x2="110" y2="330" />
+					<!-- 135 angle line -->
+					<line x1="145" y1="245" x2="75" y2="315" />
+					<!-- midle circle -->
+					<circle cx="110" cy="280" r="7" />
+					<!-- front wheel -->
+					<circle cx="280" cy="230" r="100" />
+					<line x1="280" y1="330" x2="280" y2="130" />
+					<rect x1="280" y1="330" x2="280" y2="130" ></rect>
+					<line x1="180" y1="230" x2="380" y2="230" />
+					<line x1="350" y1="160" x2="210" y2="300" />
+					<line x1="210" y1="160" x2="350" y2="300" />
+					<!-- midle circle /butucul -->
+					<circle cx="280" cy="230" r="13" />
+					<!-- bike body /structure -->
+					<line class="structure" x1="280" y1="220" x2="280" y2="100" />
+					<!-- curved lines - https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths 
+					d="M x y Q x1 y1, x y-->
+					<path class="structure" d="M 110 230 Q 140 110 280 110" stroke="black" fill="transparent" />
+					<path class="structure" d="M 280 100 Q 280 80 255 85" stroke="black" fill="transparent" />
+					<path class="structure" d="M 176 135 Q 140 140 130 120" stroke="black" fill="transparent" />
+					</g>
+					<defs>
+					<!-- gradient -->
+					<linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+						<stop class="light" offset="0%" />
+						<stop class="dark" offset="100%" />
+					</linearGradient>
+					</defs>
+				</svg>
+			</div>
+			<h1>{{ site_title }}</h1>
+		</div>
+
+		<section class="nav-main wrapper">
+
+			<ul class="menu-list">
+			{{ #menu }}
+				<li>
+					<figure>
+						<img src="{{ img_src }}" alt="{{ img_alt }}">
+					</figure>
+					<a href="{{ path }}">{{ title }}</a>
+				</li>
+			{{ /menu }}
+			</ul>
+
+		</section>
+
+	</nav>
+	<main id="main">
+		{{{ main }}}
+	</main>
+	<footer class="wrapper">
+		<a href="#">&copy; Paula Burghelea {{ year }}</a>
+		<a href="#">Privacy Policy</a>
+	</footer>
+	
+</body>
+</html>

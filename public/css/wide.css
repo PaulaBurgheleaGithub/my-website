@@ -1,0 +1,175 @@
+body {
+	/* background:hotpink !important; */
+}
+
+header > section {
+	/* position: relative; */
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+}
+
+.intro {
+	width: clamp(360px, 40%, 690px);
+}
+
+.intro h2 {
+	font-size: clamp(32px, 5vw, 5rem);
+	width: 130%;
+}
+
+/* .header-img {
+	position: absolute;
+	right: -40%;
+	top: 25%;
+} */
+
+article > header {
+	padding: 0;
+}
+
+article {
+	width: 100%;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+article .profile,
+article .work-experience {
+	padding-right: var(--padding);
+}
+
+article .skills,
+article .languages,
+article .education {
+	padding-left: var(--padding);
+}
+
+article .name {
+	order: 1;
+	display: flex;
+	width: 100%;
+	flex-shrink: 0; /* ?? */
+}
+
+article .profile {
+	order: 2;
+	width: 60%;
+}
+
+article .skills {
+	order: 3;
+	width: 40%;
+}
+
+article .work-experience {
+	order: 4;
+	width: 60%;
+}
+
+article .languages {
+	order: 5;
+	width: 40%;
+}
+
+article .education {
+	order: 6;
+	width: 40%;
+	align-self: stretch;
+}
+
+article > header hgroup {
+	text-align: start;
+	padding-left: calc(5vw + var(--padding));
+}
+
+
+.right,
+.name .photo {
+	order:2;
+	width: 40%;
+	background-color: var(--dark-green);
+}
+
+.right section,
+.name .photo {
+	padding: var(--margin);
+	padding-right: var(--col-offset);
+}
+
+.right section {
+	margin: 0;
+	padding-bottom: calc(var(--margin) / 2);
+}
+
+.name .photo figure {
+	width: 100%;
+}
+
+.name figure img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.name hgroup {
+	order: 1;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+
+
+.left section {
+	padding-right: var(--padding);
+}
+.skills ul {
+	margin-bottom: 0;
+}
+
+.education .schools hgroup h4 {
+	order:2;
+	min-width: 290px;
+}
+
+.education .schools hgroup h6 {
+	order:1;
+	width: 100%;
+}
+
+.education .schools hgroup h5 {
+	order:3;
+	width: 100%;
+}
+
+/* NAV Menu */
+
+.nav-main {
+	padding-left: 50%;
+}
+.nav-main figure {
+	display: block;
+	width: 50%;
+	margin: 0;
+	align-self: flex-end;
+}
+.nav-main figure > img {
+	max-width: 400px;
+}
+
+/* should go in the theme.css ? */
+.nav-main .menu-list { 
+	font-size: 5rem;
+}
+
+.header-img .leaf-08,
+.header-img .leaf-07,
+.header-img .leaf-06,
+.header-img .leaf-05,
+.header-img .leaf-04,
+.header-img .leaf-03,
+.header-img .leaf-02,
+.header-img .leaf-01 { 
+	max-height: 9%;
+}
