@@ -1,9 +1,18 @@
+@font-face {
+	font-family: 'Imprima';
+	src: url('../assets/fonts/Imprima/Imprima-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Yusei_Magic';
+	src: url('../assets/fonts/Yusei_Magic/YuseiMagic-Regular.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
 :root {
-	--bg-color:#e1e1e1;
-	--header-bg-color:#aaa;
-	--text-color:#F9EBD7;
-	--heading-color:#222;
-	--right-section:#C7A267;
 	--orange:#F3B945;
 	--active-orange:#eda619;
 	--col-bg-color: #69A5A1;
@@ -15,23 +24,9 @@
 	--initial: -250px;
 	--final: -50px;
 
-/* Option 2 colors from https://seasons-and-salt.com/  */
-	--main-bg-brown: #90482F;
-	--main-light01: #C7A267;
-	--main-light02:#FDFEF6;
-	--main-bg-red:#B43C20;
 
-	--neutral-navy:#153458;
-	--neutral-grey:#303436;
-	--neutral-blue:#9FCEFF;
-	--neurtal-cream:#9B8F83;
-
-	--accent-pink:#E4957D;
-	--accent-green:#64613E;
-	
-
-	--heading-text:"Yusei Magic", sans-serif;
-	--body-text:"Inter", sans-serif;
+	--heading-text:"Yusei_Magic", sans-serif;
+	--body-text:"Imprima", sans-serif;
 }
 
 body {
