@@ -3,6 +3,7 @@
 		"title":"Home",
 		"path":"/",
 		"controller": "index"
+
 	},
 	{
 		"title":"Projects",

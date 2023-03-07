@@ -27,13 +27,13 @@
 
 @keyframes breath {
 	0% {
-		transform: rotateZ(7deg);
+		transform: rotateZ(9deg);
 	}
 	50% {
 		transform: rotateZ(0deg);
 	}
 	100%{
-		transform: rotateZ(7deg);
+		transform: rotateZ(9deg);
 	}
 }
 
@@ -45,7 +45,7 @@
 .header-img.endposition .surf-board,
 .header-img.endposition .shoes {
 	animation: breath 5s forwards infinite;
-	animation-delay: 2.5s;
+	animation-delay: 2.3s;
 }
 
 .plane {
