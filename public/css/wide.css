@@ -1,5 +1,8 @@
-body {
-	/* background:hotpink !important; */
+:root {
+	--padding:30px;
+
+	--menu-size: 30px;
+	--logo-size: 40px;
 }
 
 header > section {
@@ -19,20 +22,65 @@ header > section {
 	width: 130%;
 }
 
+#cvButton {
+	width: 330px;
+	height: 95px;
+	font-size: 2rem;
+}
 /* .header-img {
 	position: absolute;
 	right: -40%;
 	top: 25%;
 } */
 
-article > header {
-	padding: 0;
-}
-
 article {
 	width: 100%;
 	justify-content: flex-end;
 	align-items: flex-start;
+}
+
+article .cv_header {
+	order: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	flex-shrink: 0; /* ?? */
+}
+
+article > header {
+	padding: 0;
+}
+
+article > header hgroup {
+	text-align: start;
+	padding-left: calc(5vw + var(--padding));
+}
+
+.cv_header .photo figure {
+	width: 100%;
+}
+
+.photo > figure {
+	width: 400px;
+	/* margin: var(--margin) auto var(--section-margin); */
+}
+
+.cv_header figure img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.cv_header hgroup {
+	order: 1;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+
+.cv_header hgroup h1 {
+	font-size: 5.5rem;
 }
 
 article .profile,
@@ -44,13 +92,6 @@ article .skills,
 article .languages,
 article .education {
 	padding-left: var(--padding);
-}
-
-article .name {
-	order: 1;
-	display: flex;
-	width: 100%;
-	flex-shrink: 0; /* ?? */
 }
 
 article .profile {
@@ -79,21 +120,16 @@ article .education {
 	align-self: stretch;
 }
 
-article > header hgroup {
-	text-align: start;
-	padding-left: calc(5vw + var(--padding));
-}
-
 
 .right,
-.name .photo {
+.cv_header .photo {
 	order:2;
 	width: 40%;
 	background-color: var(--dark-green);
 }
 
 .right section,
-.name .photo {
+.cv_header .photo {
 	padding: var(--margin);
 	padding-right: var(--col-offset);
 }
@@ -101,23 +137,6 @@ article > header hgroup {
 .right section {
 	margin: 0;
 	padding-bottom: calc(var(--margin) / 2);
-}
-
-.name .photo figure {
-	width: 100%;
-}
-
-.name figure img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
-
-.name hgroup {
-	order: 1;
-	flex-grow: 1;
-	display: flex;
-	align-items: center;
 }
 
 
@@ -158,9 +177,10 @@ article > header hgroup {
 	max-width: 400px;
 }
 
-/* should go in the theme.css ? */
-.nav-main .menu-list { 
-	font-size: 5rem;
+
+.menu:hover::before,
+.menu.active:hover::before {
+	right: calc(var(--margin) + 7px);
 }
 
 .header-img .leaf-08,
