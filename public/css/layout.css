@@ -1,5 +1,5 @@
 :root {
-	--padding:30px; /* clamp? */
+	--padding:20px; /* clamp? */
 
 	--margin:calc(1.5 * var(--padding));
 	--section-margin:calc(2 * var(--margin));
@@ -7,8 +7,8 @@
 	--col-offset: calc(5vw + var(--padding) + var(--menu-size) + 10px);
 
 	--diameter: clamp(230px, 40vw, 450px);
-	--logo-size: 40px;
-	--menu-size: 30px;
+	--logo-size: 30px;
+	--menu-size: 17px;
 
 	--gap: var(--padding);
 }
@@ -50,7 +50,7 @@ h6 {
 }
 
 h1 {
-	font-size: 32px;
+	font-size: clamp(20px, 4vw, 3rem);
 }
 
 h2 {
@@ -365,9 +365,9 @@ header > section {
 #cvButton {
 	font-size: 1.5rem;
 
-	margin: var(--margin);
-	width: 250px;
-	height: 85px;
+	margin: var(--padding);
+	width: 245px;
+	height: 87px;
 	border-radius: 45px;
 }
 
@@ -376,13 +376,24 @@ main article {
 	flex-wrap: wrap;
 }
 
-article .name {
+article .cv_header {
 	width: 100%;
 	order:1;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	 
+}
+
+.cv_header .photo {
+	width: 100%;
+	align-self: center;
+}
+
+.cv_header hgroup h1 {
+	font-size: 2.3rem;
+}
+
+.cv_header hgroup h2 {
+	display: none;
 }
 
 article .profile {
@@ -415,21 +426,13 @@ main article.wrapper{
 	padding-bottom: 0;
 }
 
-.name hgroup h1 {
-	font-size: 5rem;
-}
-
-.name hgroup h2 {
-	display: none;
-}
-
 article > header h1,
 article > header h2 {
 	margin: 0 0 var(--padding) 0;
 }
 
 .photo figure {
-	width: 400px;
+	width: 270px;
 	aspect-ratio: 1;
 	border-radius: 50%;
 	overflow: hidden;
