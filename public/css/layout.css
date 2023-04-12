@@ -8,7 +8,7 @@
 
 	--diameter: clamp(230px, 40vw, 450px);
 	--logo-size: 30px;
-	--menu-size: 17px;
+	--menu-size: 23px;
 
 	--gap: var(--padding);
 }
@@ -177,7 +177,7 @@ body > nav {
 	/* solution 1  - ***position fixed*** */
 	position: fixed;
 	top: calc(var(--padding) + (var(--logo-size) - var(--menu-size)) / 2);
-	right: calc(var(--padding) + 5%);
+	right: calc(var(--padding) + 5%); 
 	/*
 		the heading container takes the height of the logo and
 		therefore if we want to know the extact midle we have to find
@@ -203,7 +203,7 @@ body > nav {
 .menu.active:hover::before {
 	display: block;
 	position: relative;
-	right: calc(var(--margin) + 5px);
+	right: calc(var(--margin) + 20px);
 	top: 0;
 }
 
