@@ -27,11 +27,10 @@ header > section {
 	height: 95px;
 	font-size: 2rem;
 }
-/* .header-img {
-	position: absolute;
-	right: -40%;
-	top: 25%;
-} */
+
+.header-img {
+	margin: var(--padding) auto 0;
+}
 
 article {
 	width: 100%;

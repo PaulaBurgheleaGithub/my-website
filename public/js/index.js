@@ -10,7 +10,7 @@ const [
 	skills,
 	languages,
 	education
-] = document.querySelectorAll("article > section")
+] = document.querySelectorAll("article > section");
 cvButton.addEventListener("click", () => {
 	// SOLUTION 1:
 	// const pageHeader = document.querySelector("header");

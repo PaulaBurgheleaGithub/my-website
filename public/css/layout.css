@@ -8,7 +8,7 @@
 
 	--diameter: clamp(230px, 40vw, 450px);
 	--logo-size: 30px;
-	--menu-size: 17px;
+	--menu-size: 23px;
 
 	--gap: var(--padding);
 }
@@ -37,7 +37,7 @@ img {
 
 p, ul, ol, blockquote {
 	line-height:1.75;
-	margin:var(--margin) 0;
+	/* margin:var(--margin) 0; */
 }
 
 h1,
@@ -62,7 +62,7 @@ h3 {
 }
 
 h4 {
-	font-size: 16px;
+	font-size: clamp(18px, 3vw, 1.3rem);
 }
 
 h5,
@@ -78,7 +78,7 @@ h6 {
 article section,
 article > header {
 	padding:
-		var(--padding)
+		var(--margin)
 		var(--col-offset) /* <-- 5vw was added -- but why? */
 		var(--padding)
 		calc(5vw + var(--padding));
@@ -177,7 +177,7 @@ body > nav {
 	/* solution 1  - ***position fixed*** */
 	position: fixed;
 	top: calc(var(--padding) + (var(--logo-size) - var(--menu-size)) / 2);
-	right: calc(var(--padding) + 5%);
+	right: calc(var(--padding) + 5%); 
 	/*
 		the heading container takes the height of the logo and
 		therefore if we want to know the extact midle we have to find
@@ -203,16 +203,11 @@ body > nav {
 .menu.active:hover::before {
 	display: block;
 	position: relative;
-	right: calc(var(--margin) + 5px);
+	right: calc(var(--margin) + 20px);
 	top: 0;
 }
 
 header > section {
-	/* display: flex;
-
-	justify-content: space-between;
-	align-items: center; */
-	/* position: relative; */
 	flex-grow: 1;
 }
 
@@ -232,7 +227,7 @@ header > section {
 
 	max-width: 450px;
 
-	margin: var(--padding) auto 0;
+	margin: 200px auto 0;
 
 	/* flex-grow: 1; */
 	z-index: 2;
@@ -478,10 +473,6 @@ article > header h2 {
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 0 var(--padding);
-}
-
-.schools li {
-	margin: var(--margin) 0;
 }
 
 .education .schools hgroup h4 {
