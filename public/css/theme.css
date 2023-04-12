@@ -250,6 +250,11 @@ article > header {
 	background-color: var(--active-orange);
 }
 
+.work-experience ol li ol > li,
+.work-experience ol li > ul > li {
+	font-family: var(--heading-text);
+}
+
 .roles,
 .education {
 	color: var(--dark-green);

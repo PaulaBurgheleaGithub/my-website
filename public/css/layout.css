@@ -37,7 +37,7 @@ img {
 
 p, ul, ol, blockquote {
 	line-height:1.75;
-	margin:var(--margin) 0;
+	/* margin:var(--margin) 0; */
 }
 
 h1,
