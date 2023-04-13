@@ -51,7 +51,7 @@
 
 
 	<meta name="msapplication-TileColor" content="#FFFFFF" />
-	
+
 	<meta name="msapplication-TileImage" content="/assets/favicomatic/mstile-144x144.png" />
 	<meta name="msapplication-square70x70logo" content="/assets/favicomatic/mstile-70x70.png" />
 	<meta name="msapplication-square150x150logo" content="/assets/favicomatic/mstile-150x150.png" />
@@ -65,7 +65,7 @@
 		rel="stylesheet"
 		type="text/css"
 		href="/css/layout.css" />
-		
+
 	<link
 		rel="stylesheet"
 		type="text/css"
@@ -83,11 +83,22 @@
 		type="text/css"
 		href="/css/animation.css" />
 	<!---->
-	
+
 	<!-- SCRIPTS -->
 	{{{ scripts }}}
 	<script src="/js/menu.js" type="module"></script>
-	
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+	<script>
+		$(function() {
+			var pathname = window.location.pathname;
+			if (pathname == "/") {
+				$("#ascundema").add();
+			}
+			else {
+				$("#ascundema").remove();
+			}
+		});
+	</script>
 	<!---->
 </head>
 
@@ -122,7 +133,7 @@
 							<circle cx="280" cy="230" r="13" />
 							<!-- bike body /structure -->
 							<line class="structure" x1="280" y1="220" x2="280" y2="100" />
-							<!-- curved lines - https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths 
+							<!-- curved lines - https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths
 							d="M x y Q x1 y1, x y-->
 							<path class="structure" d="M 110 230 Q 140 110 280 110" stroke="black" fill="transparent" />
 							<path class="structure" d="M 280 100 Q 280 80 255 85" stroke="black" fill="transparent" />
@@ -143,7 +154,7 @@
 
 		</div>
 		<label class="menu" for="menu-toggle"></label>
-		<section class="wrapper">
+		<section id="ascundema" class="wrapper">
 			<div class="intro">
 				<h2>Hi! I am a Junior Web-Developer</h2>
 				<p>I have lived and worked in Romania, Italy, Portugal and currently live in the United Kingdom. I was raised to strive for perfection and look for ways I can improve my life, work and my relationships.
@@ -199,7 +210,7 @@
 						<circle cx="280" cy="230" r="13" />
 						<!-- bike body /structure -->
 						<line class="structure" x1="280" y1="220" x2="280" y2="100" />
-						<!-- curved lines - https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths 
+						<!-- curved lines - https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths
 						d="M x y Q x1 y1, x y-->
 						<path class="structure" d="M 110 230 Q 140 110 280 110" stroke="black" fill="transparent" />
 						<path class="structure" d="M 280 100 Q 280 80 255 85" stroke="black" fill="transparent" />
@@ -241,6 +252,6 @@
 		<a href="#">&copy; Paula Burghelea {{ year }}</a>
 		<a href="#">Privacy Policy</a>
 	</footer>
-	
+
 </body>
 </html>

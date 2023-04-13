@@ -87,7 +87,7 @@ article > header {
 body > header {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	overflow-x: hidden;
 }
 
@@ -177,18 +177,18 @@ body > nav {
 	/* solution 1  - ***position fixed*** */
 	position: fixed;
 	top: calc(var(--padding) + (var(--logo-size) - var(--menu-size)) / 2);
-	right: calc(var(--padding) + 5%); 
+	right: calc(var(--padding) + 5%);
 	/*
 		the heading container takes the height of the logo and
 		therefore if we want to know the extact midle we have to find
 		how much is 1/2 of the diference between the logo and the menu
 	*/
-	
+
 	/* solution 2 - bringhing the menu back into the dom flow */
 	/* position: sticky;
 	top: calc(-1 * var(--menu-size));
 	left: calc(100% - 5% - var(--padding)); */
-	
+
 }
 
 .menu:hover::before {
@@ -248,7 +248,7 @@ header > section {
 
 	position: relative;
 	top: 0;
-	left: 0;	
+	left: 0;
 	z-index: 10;
 }
 
@@ -462,7 +462,7 @@ article > header h2 {
 
 .work-experience .jobs hgroup {
 	display: flex;
-	justify-content: space-between; 
+	justify-content: space-between;
 	align-items: center;
 	gap: var(--padding);
 }
