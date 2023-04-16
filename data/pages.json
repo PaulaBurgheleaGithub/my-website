@@ -2,7 +2,8 @@
 	{
 		"title":"Home",
 		"path":"/",
-		"controller": "index"
+		"controller": "index",
+		"header_info":""
 
 	},
 	{
