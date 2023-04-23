@@ -36,6 +36,48 @@
 		transform: rotateZ(9deg);
 	}
 }
+.moving-bike {
+	animation: fadeInRight 7s linear forwards;
+}
+
+@keyframes fadeInRight {
+	10% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	30% {
+		opacity: 0;
+		transform: translateX(-70%);
+	}
+	50% {
+		opacity: 1;
+		transform: translateX(-50%);
+	}
+	70% {
+		opacity: 1;
+		transform: translateX(-20%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.bike {
+	opacity: 0;
+	animation: dropIn 5s ease forwards;
+}
+
+@keyframes dropIn {
+	20% {
+		opacity: 0;
+		transform: translateY(-20%);
+	}
+	30%, 100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	
+}
 
 .header-img.endposition .italy,
 .header-img.endposition .romania {

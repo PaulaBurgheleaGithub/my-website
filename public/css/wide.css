@@ -1,8 +1,8 @@
 :root {
 	--padding:30px;
 
-	--menu-size: 30px;
-	--logo-size: 40px;
+	--logo-size: 80px;
+	--menu-size: 30px
 }
 
 header > section {
@@ -11,6 +11,14 @@ header > section {
 
 	justify-content: space-between;
 	align-items: center;
+}
+.moving-bike {
+	margin: clamp(calc(0.6vw + var(--margin)), calc(0.8vw + var(--margin)), calc(1vw + var(--margin)))  
+	var(--col-offset) 
+	var(--padding) 
+	calc(5vw + var(--padding)
+);
+
 }
 
 .intro {
@@ -162,7 +170,6 @@ article .education {
 }
 
 /* NAV Menu */
-
 .nav-main {
 	padding-left: 50%;
 }
