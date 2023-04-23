@@ -54,10 +54,14 @@ body > nav {
 svg {
 	background-color: #f9ebd7;
 }
-.wheels {
+.bike {
 	fill: #faebd7;
 	stroke: #000;
 	stroke-width: 9px;
+}
+.moving-bike {
+	background-color: transparent;
+	stroke: #faebd7;
 }
 .structure {
 	stroke-width: 11px;
