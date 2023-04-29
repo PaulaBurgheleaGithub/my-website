@@ -37,6 +37,7 @@ export default (
 					menu,
 					
 					path: req.path,
+					is_home: req.path=== '/',
 					styles: render(styles, render_style),
 					scripts: render(scripts, render_script),
 

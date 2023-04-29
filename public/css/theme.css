@@ -277,5 +277,6 @@ footer {
 footer a {
 	text-decoration: none;
 	font-style: inherit;
+	font-size: 0.8rem;
 	color: var(--dark-green);
 }

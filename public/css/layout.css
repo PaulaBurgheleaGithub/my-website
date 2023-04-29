@@ -50,7 +50,7 @@ h6 {
 }
 
 h1 {
-	font-size: clamp(20px, 4vw, 3rem);
+	font-size: clamp(25px, 5vw, 3.5rem);
 }
 
 h2 {
@@ -87,7 +87,7 @@ article > header {
 body > header {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	overflow-x: hidden;
 }
 
@@ -114,7 +114,6 @@ body > nav {
 
 .nav-main {
 	font-size : 4rem;
-
 	position: relative;
 	flex-grow: 1;
 	display: flex;
@@ -163,6 +162,7 @@ body > nav {
 	aspect-ratio: 1;
 	border-radius: 50%;
 }
+
 .moving-bike {
 	margin: clamp(calc(0.3vw + var(--margin)), calc(0.7vw + var(--margin)), calc(0.9vw + var(--margin)))  
 						var(--col-offset) 
@@ -225,6 +225,9 @@ header > section {
 	flex-grow: 1;
 }
 
+.home_header {
+	min-height: calc(100vh - calc((var(--margin) + var(--padding)) * 2));
+}
 .intro {
 	position: relative;
 	max-width: 690px;
@@ -508,5 +511,5 @@ footer {
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
-	gap: 20px;
+	gap: 10px;
 }
