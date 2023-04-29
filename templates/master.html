@@ -143,7 +143,9 @@
 
 		</div>
 		<label class="menu" for="menu-toggle"></label>
-		<section class="wrapper">
+
+		{{ #is_home }}
+		<section class="wrapper home_header">
 			<div class="intro">
 				<h2>Hi! I am a Junior Web-Developer</h2>
 				<p>I have lived and worked in Romania, Italy, Portugal and currently live in the United Kingdom. I was raised to strive for perfection and look for ways I can improve my life, work and my relationships.
@@ -167,14 +169,16 @@
 				<img class="leaf leaf-01"src="./assets/header/leaf01.png" />
 			</div>
 		</section>
+		{{ /is_home }}
+
 	</header>
 	<input type="checkbox" id="menu-toggle" class="menu-toggle" />
 	<nav>
 		<a href="/">
-			<svg viewBox="0 0 400 400" class="moving-bike logo">
+			<svg class="moving-bike logo" viewBox="0 0 400 400" >
 				<g class="bike">
 				<!-- back wheel -->
-				<circle cx="110" cy="280" r="50" />
+				<circle class="wheel01" cx="110" cy="280" r="50" />
 				<!-- horisontal line -->
 				<line x1="60" y1="280" x2="160" y2="280" />
 				<!-- 45 angle line -->
@@ -258,7 +262,6 @@
 			</a>
 			<h1>{{ site_title }}</h1>
 		</div>
-
 		<section class="nav-main wrapper">
 
 			<ul class="menu-list">
@@ -273,7 +276,6 @@
 			</ul>
 
 		</section>
-
 	</nav>
 	<main id="main">
 		{{{ main }}}

@@ -13,11 +13,11 @@ header > section {
 	align-items: center;
 }
 .moving-bike {
-	margin: clamp(calc(0.6vw + var(--margin)), calc(0.8vw + var(--margin)), calc(1vw + var(--margin)))  
-	var(--col-offset) 
-	var(--padding) 
-	calc(5vw + var(--padding)
-);
+	margin: clamp(calc(0.6vw + var(--margin)), calc(0.8vw + var(--margin)), calc(1vw + var(--margin)))
+					var(--col-offset)
+					var(--padding)
+					calc(5vw + var(--padding)
+				);
 
 }
 
