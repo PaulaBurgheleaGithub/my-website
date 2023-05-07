@@ -263,6 +263,9 @@ article > header {
 .education {
 	color: var(--dark-green);
 }
+.time-interval {
+	font-size: clamp(14px, 1.2vw, 1rem);
+}
 
 section h3::after {
 	content: "";
@@ -277,6 +280,6 @@ footer {
 footer a {
 	text-decoration: none;
 	font-style: inherit;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	color: var(--dark-green);
 }

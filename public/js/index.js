@@ -52,6 +52,11 @@ const calibrate = () => {
 			education,
 			languages,
 			work
+		],
+		[
+			work,
+			profile,
+			skills
 		]
 	].forEach(elements => adjustPosition(...elements));
 	window.requestAnimationFrame(calibrate);
