@@ -54,9 +54,6 @@
 		 transform: translatex(-10px);
 	 }
 }
-.wheel01 {
-	animation: ;
-}
 
 @keyframes spinner {
 	0% {
@@ -76,8 +73,8 @@
 		transform: translateY(-35px);
 	}
 	100% {
-		transform: translateX(px);
-		transform: translateY(px);
+		transform: translateX(95px);
+		transform: translateY(-35px);
 	}
 }
 

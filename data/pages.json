@@ -26,5 +26,15 @@
 		"controller": "contact",
 		"img_src": "/assets/img/working.jpeg",
 		"img_alt": "working"
+	},
+	{
+		"title":"Copyright",
+		"path":"/copyright",
+		"controller": "copyright"
+	},
+	{
+		"title":"Privacy Policy",
+		"path":"/privacy",
+		"controller": "privacy"
 	}
 ]
