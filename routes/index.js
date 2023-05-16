@@ -6,7 +6,13 @@ export default page_router(
 	'Home Page',
 	(req, res) => {
 		return {
-			scripts: ["/js/index.js"]
+			scripts: [
+				"/js/animation.js",
+				"/js/index.js"
+			],
+			styles: [
+				"/css/animation.css"
+			]
 		}
 	}
 )

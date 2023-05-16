@@ -6,7 +6,12 @@ export default page_router(
 	'About me',
 	(req, res) => {
 		return {
-			//put data here
+			scripts: [
+				"/js/animation.js"
+			],
+			styles: [
+				"/css/about.css"
+			]
 		}
 	}
 )

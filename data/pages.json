@@ -21,7 +21,7 @@
 		"img_alt": "surf portugal"
 	},
 	{
-		"title":"Contact",
+		"title":"Contact Me",
 		"path":"/contact",
 		"controller": "contact",
 		"img_src": "/assets/img/working.jpeg",

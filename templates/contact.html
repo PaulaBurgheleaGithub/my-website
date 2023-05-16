@@ -1,3 +1,21 @@
 <article>
 	<h1> {{ title }}</h1>
+
+	<form action="" method="get" class="contact-form">
+		<div class="name">
+		  <label for="name">Full name: </label>
+		  <input type="text" name="name" id="name" placeholder="First and last name" required>
+		</div>
+		<div class="email">
+		  <label for="email">Email: </label>
+		  <input type="email" name="email" id="email" required>
+		</div>
+		<div class="message">
+			<label for="message">Message: </label>
+			<input type="text" name="message" id="message" required>
+		 </div>
+		<div class="form-example">
+		  <input type="submit" value="Send">
+		</div>
+	 </form>
 </article>

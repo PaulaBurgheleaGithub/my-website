@@ -6,7 +6,12 @@ export default page_router(
 	'Contact me',
 	(req, res) => {
 		return {
-			//put data here
+			scripts: [
+				"/js/contact-animation.js"
+			],
+			styles: [
+				"/css/contact.css"
+			]
 		}
 	}
 )
