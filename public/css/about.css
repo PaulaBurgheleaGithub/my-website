@@ -1,10 +1,28 @@
-body {
-	height: 100vh;
-	width: 100vw;
-	overflow: hidden;
+section {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 80px;
+	width: calc(100% - 10.6667vw);
 }
 
-ul {
-	height: 71vh;
-	width: 100vw;
+ul { 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+list-img {
+	width: 100%;
+	height: 100%;
+}
+
+img {
+	margin: 0;
+	padding: 0;
+	aspect-ratio: auto 764 / 1368;
 }
