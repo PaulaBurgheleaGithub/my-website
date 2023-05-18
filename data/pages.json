@@ -21,11 +21,11 @@
 		"img_alt": "surf portugal"
 	},
 	{
-		"title":"Contact Me",
+		"title":"Contact",
 		"path":"/contact",
 		"controller": "contact",
 		"img_src": "/assets/img/working.jpeg",
-		"img_alt": "working"
+		"img_alt": "working remote somewhere in Italy"
 	},
 	{
 		"title":"Copyright",
@@ -36,5 +36,61 @@
 		"title":"Privacy Policy",
 		"path":"/privacy",
 		"controller": "privacy"
+	},
+	{
+		"title":"London is my hub.",
+		"path":"/about",
+		"controller": "about",
+		"img_src": "/assets/img/London_2023.jpg",
+		"img_alt": "London canal image"
+	},
+	{
+		"title":"I wanted to learn how to surf,",
+		"path":"/about",
+		"controller": "about",
+		"img_src": "/assets/img/surf02.jpg",
+		"img_alt": "getting ready for a surf lesson"
+	},
+	{
+		"title":"and ended up writing code in Scotland.",
+		"path":"/about",
+		"controller": "about",
+		"img_src": "/assets/img/scotland.jpg",
+		"img_alt": "reading a book about Scotland"
+	},
+	{
+		"title":"I value spending time with family",
+		"path":"/about",
+		"controller": "about",
+		"img_src": "/assets/img/sweet_girl.jpg",
+		"img_alt": "image of a little girl out in the countryside"
+	},
+	{
+		"title":"have a thing for train stations",
+		"path":"/about",
+		"controller": "about",
+		"img_src": "/assets/img/train_station_UK.jpg",
+		"img_alt": "picture of train station in London"
+	},
+	{
+		"title":"and like to discover new places in England.",
+		"path":"/about",
+		"controller": "about",
+		"img_src": "/assets/img/village_UK.jpg",
+		"img_alt": "small village in England"
+	},
+	{
+		"title":"Fly me to the moon",
+		"path":"/about",
+		"controller": "about",
+		"img_src": "/assets/img/airplane.jpg",
+		"img_alt": "flying above the Alps"
+	},
+	{
+		"title":"but first let's have a cup of latte.",
+		"path":"/about",
+		"controller": "about",
+		"img_src": "/assets/img/latte_art.jpg",
+		"img_alt": "my cup of latte"
 	}
 ]

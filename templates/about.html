@@ -1,10 +1,14 @@
 <section id="about-page">
 	<ul>
-		<li>1</li>
-		<li>2</li>
-		<li>3</li>
-		<li>4</li>
-		<li>5</li>
-		<li>6</li>
+		<li>
+			{{ #img_list }}
+			<a href="{{ path }}">
+				<figure>
+					<img class="list-img" src="{{ img_src }}" alt="{{ img_alt }}">
+				</figure>
+				<h3>{{ title }}</h3>
+			</a>
+			{{ /img_list }}
+		</li>
 	</ul>
 </section>
