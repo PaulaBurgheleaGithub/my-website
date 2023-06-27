@@ -1,14 +1,14 @@
 <section id="about-page">
 	<ul>
+		{{ #img_list }}
 		<li>
-			{{ #img_list }}
 			<a href="{{ path }}">
 				<figure>
 					<img class="list-img" src="{{ img_src }}" alt="{{ img_alt }}">
 				</figure>
-				<h3>{{ title }}</h3>
+				<h3 class="img_txt">{{ title }}</h3>
 			</a>
-			{{ /img_list }}
 		</li>
+		{{ /img_list }}
 	</ul>
 </section>
