@@ -1,4 +1,5 @@
 const track = document.getElementById("image-track");
+const ongoingTouches = [];
 
 const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
 
@@ -20,20 +21,20 @@ const handleOnMove = e => {
 
 	track.animate({
 		transform: `translate(${nextPercentage}%, -75%)`
-}, { duration: 1400, fill: "forwards" });
+	}, { duration: 1400, fill: "forwards" });
 
-for(const image of track.getElementsByClassName("list-img")) {
+	for(const image of track.getElementsByClassName("list-img")) {
 		image.animate({
 		objectPosition: `${100 + nextPercentage}% center`
-   }, { duration: 1300, fill: "forwards" });
+	}, { duration: 1300, fill: "forwards" });
 	}
 }
 
-/* -- extra lines for touch events -- */
+/* -- extra lines for touch events, not working -- */
 
 window.onmousedown = e => handleOnDown(e);
 
-window.ontouchstart = e => handleOnDown(e.touches[0]);
+window.ontouchstart = e => handleOnMove(e.touches[0]);
 
 window.onmouseup = e => handleOnUp(e);
 

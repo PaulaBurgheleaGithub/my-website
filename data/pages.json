@@ -10,22 +10,22 @@
 		"title":"Projects",
 		"path":"/projects",
 		"controller": "projects",
-		"img_src": "/assets/img/london.jpeg",
-		"img_alt": "London"
+		"img_src": "/assets/img/scotland.jpg",
+		"img_alt": "Scotland dream land"
 	},
 	{
 		"title":"About",
 		"path":"/about",
 		"controller": "about",
 		"img_src": "/assets/img/surf01.jpg",
-		"img_alt": "surf portugal"
+		"img_alt": "getting ready for a surf lesson"
 	},
 	{
 		"title":"Contact",
 		"path":"/contact",
 		"controller": "contact",
-		"img_src": "/assets/img/working.jpeg",
-		"img_alt": "working remote somewhere in Italy"
+		"img_src": "/assets/img/fly.jpg",
+		"img_alt": "airplane window"
 	},
 	{
 		"title":"Copyright",
@@ -87,10 +87,24 @@
 		"img_alt": "Ocean view from the coast of Portugal"
 	},
 	{
-		"title":"but first let's have a cup of latte.",
-		"path":"/about",
+		"title":"reading/writing bad code is not my cup of latte.",
+		"path":"#",
 		"controller": "about",
 		"img_src": "/assets/img/latte_art.jpg",
 		"img_alt": "my cup of latte"
+	},
+	{
+		"title":"NFT Online Store",
+		"path":"https://desolate-harbor-25583-d0e8904996eb.herokuapp.com/",
+		"controller": "projects",
+		"img_src": "/assets/img/Shop-page.png",
+		"img_alt": "e-commerce app"
+	},
+	{
+		"title":"work in progress",
+		"path":"#",
+		"controller": "projects",
+		"img_src": "/assets/img/work_in_progress.jpg",
+		"img_alt": "work in progress"
 	}
 ]

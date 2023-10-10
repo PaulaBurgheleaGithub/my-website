@@ -2,14 +2,14 @@
 	<ul id="image-track" data-move-down-at="0" data-prev-percentage="0">
 		{{ #img_list }}
 		<li>
-			<!-- <a href="{{ path }}"> -->
-			<figure>
-				<div class="card-img">
-					<img class="list-img" src="{{ img_src }}" alt="{{ img_alt }}" draggable="false">
-				</div>
-			</figure>
-			<h3 class="img_txt">{{ title }}</h3>
-			<!-- </a> -->
+			<a href="{{ path }}">
+				<figure>
+					<div class="card-img">
+						<img class="list-img" src="{{ img_src }}" alt="{{ img_alt }}" draggable="false">
+					</div>
+				</figure>
+				<h3 class="img_txt">{{ title }}</h3>
+			</a>
 		</li>
 		{{ /img_list }}
 	</ul>
