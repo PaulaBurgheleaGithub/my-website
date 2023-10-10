@@ -6,7 +6,23 @@ export default page_router(
 	'Projects Page',
 	(req, res) => {
 		return {
-			//put data here
+			scripts: [
+				"/js/animation.js"
+			],
+			styles: [
+				{
+					mediaVal: "",
+					path:"/css/general.css"
+				},
+				{
+					mediaVal: "",
+					path:"/css/about.css"
+				},
+				{
+					mediaVal: "(min-width: 960px)",
+					path:"/css/wide_about.css"
+				}
+			]
 		}
 	}
 )

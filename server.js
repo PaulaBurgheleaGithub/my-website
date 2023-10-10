@@ -3,6 +3,7 @@ import { log as print } from 'node:console';
 import { read_data as read } from 'utils';
 
 const ROUTES = read('data/pages').map(page => page.controller);
+
 const {domain, port} = read('data/settings');
 const app = express();
 

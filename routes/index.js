@@ -11,7 +11,10 @@ export default page_router(
 				"/js/index.js"
 			],
 			styles: [
-				"/css/animation.css"
+				{
+					mediaVal: "",
+					path: "/css/animation.css"
+				}
 			]
 		}
 	}

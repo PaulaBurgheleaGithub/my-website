@@ -10,8 +10,24 @@ export default page_router(
 				"/js/animation.js"
 			],
 			styles: [
-				"/css/about.css"
+				{
+					mediaVal: "",
+					path:"/css/general.css"
+				},
+				{
+					mediaVal: "",
+					path:"/css/about.css"
+				},
+				{
+					mediaVal: "(min-width: 960px)",
+					path:"/css/wide_about.css"
+				}
 			]
+			// [
+			// 	"/css/general.css",
+			// 	"/css/about.css",
+			// 	"/css/wide_about.css"
+			// ]
 		}
 	}
 )
