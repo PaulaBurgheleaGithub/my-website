@@ -1,16 +1,18 @@
 <section id="projects-page">
 	<ul id="image-track" data-move-down-at="0" data-prev-percentage="0">
-		{{ #img_list }}
+		{{ #projects }}
 		<li>
 			<!-- <a href="{{ path }}"> -->
 			<figure>
-				<div class="card-img">
-					<img class="list-img" src="{{ img_src }}" alt="{{ img_alt }}" draggable="false">
-				</div>
+				<a href="{{ path }}">
+					<div class="card-img">
+						<img class="list-img" src="{{ img_src }}" alt="{{ img_alt }}" draggable="false">
+					</div>
+				</a>
 			</figure>
 			<h3 class="img_txt">{{ title }}</h3>
-			<!-- </a> -->
+			</a>
 		</li>
-		{{ /img_list }}
+		<!-- {{ /projects }} -->
 	</ul>
 </section>

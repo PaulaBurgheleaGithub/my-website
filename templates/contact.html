@@ -1,21 +1,19 @@
 <article>
-	<h1> {{ title }}</h1>
-
 	<form action="" method="get" class="contact-form">
 		<div class="name">
-		  <label for="name">Full name: </label>
-		  <input type="text" name="name" id="name" placeholder="First and last name" required>
+			<label for="name">Full name: </label>
+			<input type="text" name="name" id="name" placeholder="First and last name" required />
 		</div>
 		<div class="email">
-		  <label for="email">Email: </label>
-		  <input type="email" name="email" id="email" required>
+			<label for="email">Email: </label>
+			<input type="email" name="email" id="email" aria-describedby="emailHelp" placeholder="To whom may I reply?"
+				required />
 		</div>
 		<div class="message">
 			<label for="message">Message: </label>
-			<input type="text" name="message" id="message" required>
-		 </div>
-		<div class="form-example">
-		  <input type="submit" value="Send">
+			<!-- <input type="text" name="message" id="message" required> -->
+			<textarea name="message" placeholder="your message" cols="30" rows="5" required></textarea>
 		</div>
-	 </form>
+		<button type="submit" value="Send">Submit</button>
+	</form>
 </article>
