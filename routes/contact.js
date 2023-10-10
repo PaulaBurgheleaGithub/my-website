@@ -10,7 +10,14 @@ export default page_router(
 				"/js/contact-animation.js"
 			],
 			styles: [
-				"/css/contact.css"
+				{
+					mediaVal: "",
+					path:"/css/general.css"
+				},
+				{
+					mediaVal: "",
+					path: "/css/contact.css"
+				}
 			]
 		}
 	}

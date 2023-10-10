@@ -41,50 +41,50 @@
 		"title":"London is my hub.",
 		"path":"/about",
 		"controller": "about",
-		"img_src": "/assets/img/London_2023.jpg",
-		"img_alt": "London canal image"
+		"img_src": "/assets/img/London-sunset.jpg",
+		"img_alt": "London view from Sky Gardens"
 	},
 	{
 		"title":"I wanted to learn how to surf,",
 		"path":"/about",
 		"controller": "about",
 		"img_src": "/assets/img/surf02.jpg",
-		"img_alt": "getting ready for a surf lesson"
+		"img_alt": "preparing for a surf lesson"
 	},
 	{
 		"title":"and ended up writing code in Scotland.",
 		"path":"/about",
 		"controller": "about",
-		"img_src": "/assets/img/scotland.jpg",
-		"img_alt": "reading a book about Scotland"
+		"img_src": "/assets/img/mac-coffee.jpg",
+		"img_alt": "working in a coffee shop"
 	},
 	{
 		"title":"I value spending time with family",
 		"path":"/about",
 		"controller": "about",
-		"img_src": "/assets/img/sweet_girl.jpg",
+		"img_src": "/assets/img/princess.jpg",
 		"img_alt": "image of a little girl out in the countryside"
 	},
 	{
-		"title":"have a thing for train stations",
+		"title":"but also the church family",
 		"path":"/about",
 		"controller": "about",
-		"img_src": "/assets/img/train_station_UK.jpg",
-		"img_alt": "picture of train station in London"
+		"img_src": "/assets/img/church-fam.jpg",
+		"img_alt": "my secound family is formed by church people"
 	},
 	{
 		"title":"and like to discover new places in England.",
 		"path":"/about",
 		"controller": "about",
-		"img_src": "/assets/img/village_UK.jpg",
-		"img_alt": "small village in England"
+		"img_src": "/assets/img/england-house.jpg",
+		"img_alt": "Mr. Darcy's house"
 	},
 	{
-		"title":"Fly me to the moon",
+		"title":"Spending time near the ocean feels like home",
 		"path":"/about",
 		"controller": "about",
-		"img_src": "/assets/img/airplane.jpg",
-		"img_alt": "flying above the Alps"
+		"img_src": "/assets/img/ocean.jpg",
+		"img_alt": "Ocean view from the coast of Portugal"
 	},
 	{
 		"title":"but first let's have a cup of latte.",

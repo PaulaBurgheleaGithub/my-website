@@ -5,9 +5,10 @@ import { read_data as read } from 'utils';
 const menu = read('data/pages').slice(1, 4); // <-- remove homepage as menu
 const footer = read('data/pages').slice(4, 6);
 const img_list = read('data/pages').slice(6);
+const projects = read('data/pages').slice(6);
 
-
-const render_style = path => `<link rel="stylesheet" type="text/css" href="${ path }" />`;
+// `(mediaVal? mediaVal : "")`
+const render_style = ({ mediaVal, path }) => `<link rel="stylesheet" type="text/css" media="${ mediaVal }" href="${ path }" />`;
 const render_script = path => `<script type="module" src="${ path }"></script>`;
 
 const render = (paths, renderer) => paths.map(path => renderer(path)).join('\n');

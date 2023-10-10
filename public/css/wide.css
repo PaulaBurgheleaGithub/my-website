@@ -199,24 +199,3 @@ article .education {
 .header-img .leaf-01 { 
 	max-height: 9%;
 }
-
-#about-page ul li {
-	display: flex;
-	gap: 4vmin;
-	position: absolute;
-		left:5%;
-		top:50%;
-	transform: translate(50%, -50%);
-}
-
-#about-page figure {
-	aspect-ratio: auto 764 / 1368;
-	display: flex;
-	object-fit: contain;
-}
-
-.img_txt {
-	display: none;
-	overflow: hidden;
-}
-
