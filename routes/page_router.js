@@ -14,7 +14,6 @@ const render_script = path => `<script type="module" src="${ path }"></script>`;
 const render = (paths, renderer) => paths.map(path => renderer(path)).join('\n');
 
 
-
 export default (
 	path = "/",
 	template_name = "name",
@@ -44,9 +43,7 @@ export default (
 					is_home: req.path === '/',
 					styles: render(styles, render_style),
 					scripts: render(scripts, render_script),
-
 					year: (new Date()).getFullYear(),
-					//TODO scripts and styles
 					main: view(
 						`templates/${ template_name }.html`,
 						{

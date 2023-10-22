@@ -1,8 +1,8 @@
 :root {
 	--padding:30px;
-
 	--logo-size: 80px;
-	--menu-size: 30px
+	--menu-size: 30px;
+	--section-margin:calc(2 * var(--margin));
 }
 
 header > section {
@@ -114,6 +114,7 @@ article .skills {
 article .work-experience {
 	order: 4;
 	width: 60%;
+	padding-bottom: calc(3 * var(--margin));
 }
 
 article .languages {
@@ -126,7 +127,6 @@ article .education {
 	width: 40%;
 	align-self: stretch;
 }
-
 
 .right,
 .cv_header .photo {
@@ -146,12 +146,8 @@ article .education {
 	padding-bottom: calc(var(--margin) / 2);
 }
 
-
 .left section {
 	padding-right: var(--padding);
-}
-.skills ul {
-	margin-bottom: 0;
 }
 
 .education .schools hgroup h4 {
@@ -173,6 +169,7 @@ article .education {
 .nav-main {
 	padding-left: 50%;
 }
+
 .nav-main figure {
 	display: block;
 	width: 50%;

@@ -23,11 +23,6 @@ export default page_router(
 					path:"/css/wide_about.css"
 				}
 			]
-			// [
-			// 	"/css/general.css",
-			// 	"/css/about.css",
-			// 	"/css/wide_about.css"
-			// ]
 		}
 	}
 )

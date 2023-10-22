@@ -11,6 +11,7 @@ const [
 	languages,
 	education
 ] = document.querySelectorAll("article > section");
+
 cvButton.addEventListener("click", () => {
 	// SOLUTION 1:
 	// const pageHeader = document.querySelector("header");
@@ -28,6 +29,7 @@ cvButton.addEventListener("click", () => {
 	// scroll to #main
 	location = "#main"; // ./#main
 });
+
 function adjustPosition(element, ...others) {
 	if (window.innerWidth >= 960) {
 		// above.getBoundingClientRect().bottom - beside.getBoundingClientRect().bottom

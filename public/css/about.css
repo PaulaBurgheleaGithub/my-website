@@ -1,19 +1,31 @@
+:root {
+	--orange:#F3B945;
+	--active-orange:#eda619;
+	--col-bg-color: #69A5A1;
+	--dark-green: #194542;
+	--light-green:#cae8cb;
+	--bg-profile:#D5BA7F;
+
+	--initial: -250px;
+	--final: -50px;
+
+
+	--heading-text:'Yusei_Magic', sans-serif;
+	--body-text:'Imprima', sans-serif;
+}
+
+body {
+	background-color: var(--light-green);
+}
 section {
 	display: flex;
 	margin: 40px auto 90px;
-	/* margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 80px; */
 	width: calc(100% - 10.6667vw);
 }
-
-
 
 list-img {
 	height: 40vmin;
 	height: 50vmin;
-	/* margin: 0;
-	padding: 0; */
 	object-fit: cover;
 	position: center;
 }
