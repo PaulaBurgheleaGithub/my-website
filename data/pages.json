@@ -28,14 +28,14 @@
 		"img_alt": "airplane window"
 	},
 	{
-		"title":"Copyright",
-		"path":"/copyright",
-		"controller": "copyright"
-	},
-	{
 		"title":"Privacy Policy",
 		"path":"/privacy",
 		"controller": "privacy"
+	},
+	{
+		"title":"Paula Burghelea 2023",
+		"path":"/copyright",
+		"controller": "copyright"
 	},
 	{
 		"title":"London is my hub.",

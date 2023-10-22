@@ -19,6 +19,7 @@
 	--dark-green: #194542;
 	--light-green:#cae8cb;
 	--bg-profile:#D5BA7F;
+	--svg-bg:#f9ebd7;
 
 	--initial: -250px;
 	--final: -50px;
@@ -31,7 +32,7 @@
 body {
 	font-family: var(--body-text);
 	font-size: 1.2rem;
-	background-color: var(--bg-color);
+	background-color: var(--light-green);
 	color: var(--text-color);
 }
 
@@ -52,8 +53,9 @@ body > nav {
 }
 
 svg {
-	background-color: #f9ebd7;
+	background-color: var(--svg-bg);
 }
+
 .bike {
 	fill: #faebd7;
 	stroke: #000;
@@ -102,7 +104,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a {
 	font-family: var(--heading-text);
 	color: var(--dark-green);
 }
@@ -216,8 +219,9 @@ h6 {
 }
 
 
-article > header {
-	background-color: var(--bg-color);
+.cv_header,
+.work-experience {
+	background-color: var(--svg-bg);
 }
 
 .profile {
@@ -253,7 +257,10 @@ article > header {
 .education {
 	background-color: var(--active-orange);
 }
-
+.work-experience,
+.profile {
+	background-color: var();
+}
 .work-experience ol li ol > li,
 .work-experience ol li > ul > li {
 	font-family: var(--heading-text);

@@ -87,8 +87,8 @@ article > header {
 body > header {
 	display: flex;
 	flex-direction: column;
-	/* min-height: 100vh; */
 	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 body > nav {
@@ -100,7 +100,6 @@ body > nav {
 	left: 0;
 	width: 100%;
 	height: 100%;
-
 }
 
 .noscroll {
@@ -164,11 +163,11 @@ body > nav {
 }
 
 .moving-bike {
-	margin: clamp(calc(0.3vw + var(--margin)), calc(0.7vw + var(--margin)), calc(0.9vw + var(--margin)))  
-						var(--col-offset) 
-						var(--padding) 
-						calc(5vw + var(--padding)
-				);
+	margin: clamp(calc(0.3vw + var(--margin)), calc(0.7vw + var(--margin)), calc(0.9vw + var(--margin)))
+				var(--col-offset) 
+				var(--padding) 
+				calc(5vw + var(--padding)
+	);
 	width: var(--logo-size);
 	aspect-ratio: 1;
 	border-radius: 50%;
@@ -188,7 +187,7 @@ body > nav {
 	border-radius: 50%;
 	z-index: 150;
 
-	/* solution 1  - ***position fixed*** */
+	/* solution 1  - using position fixed */
 	position: fixed;
 	top: calc(var(--padding) + (var(--logo-size) - var(--menu-size)) / 2);
 	right: calc(var(--padding) + 5%); 
@@ -197,7 +196,7 @@ body > nav {
 		therefore if we want to know the extact midle we have to find
 		how much is 1/2 of the diference between the logo and the menu
 	*/
-	
+
 	/* solution 2 - bringhing the menu back into the dom flow */
 	/* position: sticky;
 	top: calc(-1 * var(--menu-size));
@@ -426,11 +425,13 @@ article .languages {
 article .work-experience {
 	width: 100%;
 	order: 5;
+	padding-bottom: var(--padding);
 }
 
 article .education {
 	width: 100%;
 	order: 6;
+	padding-bottom: var(--col-offset);
 }
 
 main article.wrapper{
@@ -459,7 +460,11 @@ article > header h2 {
 
 .photo figure img:hover {
 	transform: scaleX(-1);
- }
+}
+
+.work-experience {
+	padding-bottom: 150px;
+}
 
 .work-experience h4,
 .work-experience h5,
@@ -504,6 +509,7 @@ article > header h2 {
 .education .schools hgroup h5 {
 	order:3;
 	width: 100%;
+	padding-bottom: var(--margin);
 }
 
 footer {
@@ -515,5 +521,4 @@ footer {
 	bottom: 0;
 	position: fixed;
 	width: 100%;
-	
 }
