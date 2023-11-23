@@ -44,15 +44,15 @@
 	0% {
 		opacity: 1;
 		transform: translatex(0px);
-	 }
-	 50% {
+	}
+	50% {
 		opacity: 0;
 		transform: translatex(250px);
-	 }
-	 100% {
-		 opacity: 1;
-		 transform: translatex(-10px);
-	 }
+	}
+	100% {
+		opacity: 1;
+		transform: translatex(-10px);
+	}
 }
 
 @keyframes spinner {
