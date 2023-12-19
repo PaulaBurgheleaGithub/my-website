@@ -36,65 +36,50 @@
 		transform: rotateZ(9deg);
 	}
 }
-.moving-bike {
-	animation: move 16s ease-in-out infinite 1s;
-}
 
 @keyframes move {
 	0% {
 		opacity: 1;
-		transform: translatex(0px);
+		transform: translateX(0px);
 	}
-	50% {
+	25% {
 		opacity: 0;
-		transform: translatex(250px);
+		transform: translateX(250px);
+	}
+	75% {
+		opacity: 0;
+		transform: translateX(-250px);
 	}
 	100% {
 		opacity: 1;
-		transform: translatex(-10px);
+		transform: translate(0px);
 	}
 }
 
 @keyframes spinner {
-	0% {
-		transform: translateX(0px);
-		transform: translateY(0px);
+	from {
+		transform: rotateZ(0deg);
 	}
-	25% {
-		transform: translateX(15px);
-		transform: translateY(-35px);
-	}
-	50% {
-		transform: translateX(35px);
-		transform: translateY(-50px);
-	}
-	75% {
-		transform: translateX(70px);
-		transform: translateY(-35px);
-	}
-	100% {
-		transform: translateX(95px);
-		transform: translateY(-35px);
+	to {
+		transform: rotateZ(360deg);
 	}
 }
 
 .bike {
-	opacity: 0;
-	animation: dropIn 5s ease forwards;
-	animation-delay: calc(var(--duration) * 100ms);
+	opacity: 1;
+	animation: move 7000ms ease-in-out infinite;
+	/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+	animation-delay: var(--duration);
+	/* calc(var(--duration) * 100ms) */
 }
 
-@keyframes dropIn {
-	20% {
-		opacity: 0;
-		transform: translateY(-20%);
-	}
-	30%, 100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-	
+.wheel{
+	animation: spinner 1s infinite linear;
+	animation-delay: calc(var(--duration) * 100ms);
+	transform-origin: center;
+	transform-box: fill-box;
 }
+
 
 .header-img.endposition .italy,
 .header-img.endposition .romania {

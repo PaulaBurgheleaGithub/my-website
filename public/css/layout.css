@@ -156,25 +156,10 @@ body > nav {
 	padding: 0;
 }
 
-.logo svg {
+svg {
 	width: var(--logo-size);
 	aspect-ratio: 1;
 	border-radius: 50%;
-}
-
-.moving-bike {
-	margin: clamp(calc(0.3vw + var(--margin)), calc(0.7vw + var(--margin)), calc(0.9vw + var(--margin)))
-				var(--col-offset) 
-				var(--padding) 
-				calc(5vw + var(--padding)
-	);
-	width: var(--logo-size);
-	aspect-ratio: 1;
-	border-radius: 50%;
-	z-index: 100;
-	position: fixed;
-	top: 0;
-	left: 0;
 }
 
 .menu {
