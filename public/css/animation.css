@@ -67,14 +67,13 @@
 
 .bike {
 	opacity: 1;
-	animation: move 7000ms ease-in-out infinite;
-	/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+	animation: move 5000ms ease-in-out forwards;
 	animation-delay: var(--duration);
-	/* calc(var(--duration) * 100ms) */
+	animation-range: 50px 50px;
 }
 
 .wheel{
-	animation: spinner 1s infinite linear;
+	animation: spinner 2s linear infinite;
 	animation-delay: calc(var(--duration) * 100ms);
 	transform-origin: center;
 	transform-box: fill-box;
