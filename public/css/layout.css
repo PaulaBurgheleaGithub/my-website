@@ -296,6 +296,9 @@ header > section {
 	left: 80%;
 	z-index: 8;
 }
+.header-img > a {
+	display: block;
+}
 
 .header-img .leaf-01,
 .header-img .leaf-02,
