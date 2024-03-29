@@ -22,5 +22,5 @@ for (const route of ROUTES) {
 
 app.listen(
 	port,
-	() => print(`Server started ${ domain }:${ port }`)
+	() => print(`Server started http://${ domain }:${ port }`)
 );

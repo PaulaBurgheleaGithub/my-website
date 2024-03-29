@@ -4,7 +4,7 @@ import { read_data as read } from 'utils';
 
 const menu = read('data/pages').slice(1, 4); // <-- remove homepage as menu
 const footer = read('data/pages').slice(4, 6);
-const img_list = read('data/pages').slice(6, 14);
+const img_list = read('data/pages').slice(6, 14).map((item, idx) => ({ ...item, is_first_item: idx === 0 }));
 const projects = read('data/pages').slice(14);
 
 // `(mediaVal? mediaVal : "")`

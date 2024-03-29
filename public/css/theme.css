@@ -13,6 +13,12 @@
 }
 
 :root {
+	--white:#FFFCF1;
+	--black: ##212121;
+	--background: #0E0E0E;
+	--primary-orange: #FF5F38;
+	--primary-purple:#7087F7;
+
 	--orange:#F3B945;
 	--active-orange:#eda619;
 	--col-bg-color: #69A5A1;
@@ -217,7 +223,6 @@ a {
 #cvButton:hover {
 	background-color: var(--active-orange);
 }
-
 
 .cv_header,
 .work-experience {

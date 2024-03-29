@@ -1,3 +1,12 @@
+:root {
+	--orange:#F3B945;
+	--active-orange:#eda619;
+	--col-bg-color: #69A5A1;
+	--dark-green: #194542;
+	--light-green:#cae8cb;
+	--bg-profile:#D5BA7F;
+	--svg-bg:#f9ebd7;
+}
 /* header main image animation */
 @keyframes fly {
 	0% {
@@ -155,3 +164,38 @@
 	left: 15%;
 }
 
+.scroll-reveal span {
+	color:hsl(0 0% 100% / 0.2);
+	background-clip: text;
+	background-repeat: no-repeat;
+	background-size: 0% 100%;
+	background-image: linear-gradient(90deg, var(--dark-green), var(--dark-green));
+	animation: scroll-reveal linear forwards;
+	animation-timeline: view(y);
+}
+/* 
+.scroll-reveal li {
+	color:hsl(0 0% 100% / 0.2);
+	background-clip: text;
+	background-repeat: no-repeat;
+	background-size: 0% 100%;
+	background-image: linear-gradient(90deg, var(--active-orange), var(--active-orange));
+	animation: scroll-reveal linear forwards;
+	animation-timeline: view(y);
+	animation-range-start: cover 10vh;
+	animation-range-end: cover 40vh;
+} */
+
+.profile-title span {
+	animation-range-start: cover 15vh;
+	animation-range-end: cover 30vh;
+}
+
+.profile-text span {
+	animation-range-start: cover 20vh;
+	animation-range-end: cover 50vh;
+}
+
+@keyframes scroll-reveal {
+	to {background-size: 100% 100%;}
+}
