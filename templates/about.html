@@ -5,7 +5,7 @@
 			<a href="{{ path }}">
 				<figure>
 					<div class="card-img">
-						<img class="list-img" src="{{ img_src }}" alt="{{ img_alt }}" draggable="false">
+						<img class="list-img{{#is_first_item}} fullscreen{{/is_first_item}}" src="{{img_src}}" alt="{{img_alt}}" draggable="false">
 					</div>
 				</figure>
 				<h3 class="img_txt">{{ title }}</h3>

@@ -18,7 +18,6 @@ header > section {
 					var(--padding)
 					calc(5vw + var(--padding)
 				);
-
 }
 
 .intro {
@@ -165,7 +164,7 @@ article .education {
 	width: 100%;
 }
 
-/* NAV Menu */
+/*** NAV Menu ***/
 .nav-main {
 	padding-left: 50%;
 }
