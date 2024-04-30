@@ -101,10 +101,24 @@
 		"img_alt": "e-commerce app"
 	},
 	{
-		"title":"work in progress",
-		"path":"#",
+		"title":"ACME - simplified financial dashboard",
+		"path":"https://acme-snowy.vercel.app/",
 		"controller": "projects",
-		"img_src": "/assets/img/work_in_progress.jpg",
-		"img_alt": "work in progress"
+		"img_src": "/assets/img/acme-app.png",
+		"img_alt": "acme desktop image"
+	},
+	{
+		"title":"React Three Fiber project",
+		"path":"https://react-three-fiber-sooty.vercel.app/",
+		"controller": "projects",
+		"img_src": "/assets/img/r3f.png",
+		"img_alt": "React Three Fiber project"
+	},
+	{
+		"title":"Travelette - MVP project",
+		"path":"https://github.com/PaulaBurgheleaGithub/travelette",
+		"controller": "projects",
+		"img_src": "/assets/img/travelette.png",
+		"img_alt": "React Full Stack project"
 	}
 ]
