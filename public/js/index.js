@@ -27,7 +27,8 @@ cvButton.addEventListener("click", () => {
 
 	// SOLUTION 3:
 	// scroll to #main
-	location = "#main"; // ./#main
+	//navigate to projects
+	location = "/projects"; 
 });
 
 function adjustPosition(element, ...others) {

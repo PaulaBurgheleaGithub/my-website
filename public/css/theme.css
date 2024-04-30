@@ -23,9 +23,9 @@
 	--active-orange:#eda619;
 	--col-bg-color: #69A5A1;
 	--dark-green: #194542;
-	--light-green:#cae8cb;
+	--light-green:#FFFFFF;
 	--bg-profile:#D5BA7F;
-	--svg-bg:#f9ebd7;
+	--svg-bg:#FFFFFF;
 
 	--initial: -250px;
 	--final: -50px;
@@ -230,7 +230,7 @@ a {
 }
 
 .profile {
-	background-color: var(--light-green);
+	background: var(--active-orange);
 }
 
 .profile,

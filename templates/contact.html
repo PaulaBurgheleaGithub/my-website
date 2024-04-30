@@ -1,19 +1,23 @@
-<article>
+<article class="wrapper">
 	<form action="" method="get" class="contact-form">
-		<div class="name">
-			<label for="name">Full name: </label>
-			<input type="text" name="name" id="name" placeholder="First and last name" required />
-		</div>
-		<div class="email">
-			<label for="email">Email: </label>
-			<input type="email" name="email" id="email" aria-describedby="emailHelp" placeholder="To whom may I reply?"
-				required />
+		<div class class="form-left">
+			<div class="name">
+				<label for="name">Full name: </label>
+				<input type="text" name="name" id="name" placeholder="Your name" required />
+			</div>
+			<div class="email">
+				<label for="email">Email: </label>
+				<input type="email" name="email" id="email" aria-describedby="emailHelp" placeholder="To whom may I reply?"
+					required />
+			</div>
 		</div>
 		<div class="message">
 			<label for="message">Message: </label>
 			<!-- <input type="text" name="message" id="message" required> -->
-			<textarea name="message" placeholder="your message" cols="30" rows="5" required></textarea>
+			<textarea name="message" placeholder="Your message" cols="30" rows="5" required></textarea>
 		</div>
-		<button type="submit" value="Send">Submit</button>
 	</form>
+	<div class="btnContainer">
+		<button id="cvButton" type="submit" value="Send">Submit</button>
+	</div>
 </article>
