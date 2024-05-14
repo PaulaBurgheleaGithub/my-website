@@ -122,17 +122,17 @@ a {
 }
 
 .menu {
-	background-color: var(--orange);
+	background: var(--orange);
 	transition:
-		background-color 0.7s;
+		background-color 0.4s;
 }
 
 .menu:hover {
-	background-color:var(--active-orange);
+	background: var(--active-orange);
 }
 
 .menu.active {
-	background-color: var(--dark-green);
+	background : var(--dark-green);
 }
 
 
@@ -245,7 +245,7 @@ a {
 
 .skills h3,
 .languages h3 {
-	color: var(--active-orange);;
+	color: var(--active-orange);
 }
 
 .education :is(h3, h4, h5, h6),
@@ -260,7 +260,10 @@ a {
 }
 
 .education {
-	background-color: var(--active-orange);
+	background: var(--active-orange);
+	.menu {
+		background: var(--dark-green);
+	}
 }
 .work-experience,
 .profile {

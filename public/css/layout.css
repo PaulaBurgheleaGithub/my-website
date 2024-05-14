@@ -164,6 +164,7 @@ svg {
 
 .menu {
 	/* Universal */
+	cursor: pointer;
 	display: flex;
 	align-items: center;
 	margin: 0;
@@ -365,6 +366,7 @@ header > section {
 	width: 215px;
 	height: 87px;
 	border-radius: 45px;
+	cursor: pointer;
 }
 
 main article {
@@ -465,6 +467,10 @@ article > header h2 {
 .menu-list {
 	list-style: none;
 	padding-left: 0;
+}
+
+.menu-list {
+	cursor: pointer;
 }
 
 .work-experience .jobs hgroup {
