@@ -17,5 +17,5 @@ jobs:
 
     steps:
       - name: Trigger deployment
-        run: curl -X POST "${{ secrets.DEPLOYWEBHOOKURL }}"
+        run: curl -X POST "${{ secrets.DEPLOY_URL }}"
       
