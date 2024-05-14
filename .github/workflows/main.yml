@@ -1,0 +1,20 @@
+name: CD
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    types: [closed]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  trigger-ploi-deployment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger deployment
+        run: curl -X POST "${{ secrets.DEPLOY_URL }}"
