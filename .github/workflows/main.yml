@@ -17,4 +17,3 @@ jobs:
 
     steps:
       - name: Trigger deployment
-        run: curl -X POST "${{ secrets.deployUrl }}"
